@@ -6,7 +6,7 @@ const Resources = () => {
   const resourcesList = [
     { title: 'Placeholder Resource 1', link: 'https://example.com/resource1' },
     { title: 'Placeholder Resource 2', link: 'https://example.com/resource2' },
-    // Add more resources as needed
+    // If needed, add more resources here
   ];
 
   return (
