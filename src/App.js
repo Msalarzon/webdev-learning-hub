@@ -67,10 +67,12 @@ function App() {
             <Flashcards sectionName="Responsive Design" />
             <Quizzes sectionName="Responsive Design" />
           </div>
-        {/* Resources Section */}
-        <div className="section">
+
+         {/* Resources Section */}
+          <div className="section">
             <Resources />
           </div>
+
         </main>
         <footer>
           <p>&copy; 2024 WebDev Learning Hub. All rights reserved.</p>
