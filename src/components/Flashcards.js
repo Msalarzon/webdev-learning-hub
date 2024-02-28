@@ -13,11 +13,6 @@ const Flashcards = ({ sectionName }) => {
     setShowGallery(!showGallery);
   };
 
-  // useEffect is defined to avoid ESLint warning
-  useEffect(() => {
-    // If you have any side effect logic, you can add it here
-  }, []); // Empty dependency array if there are no dependencies
-
   const settings = {
     dots: true,
     infinite: true,
@@ -27,10 +22,10 @@ const Flashcards = ({ sectionName }) => {
   };
 
   return (
-    <div>
-      <h2>Flashcards - {sectionName}</h2>
+    <div className="flashcards-container">
+      <h2>Flashcards</h2>
       <button onClick={toggleGallery}>
-        {showGallery ? 'Close Gallery' : 'Open Gallery'}
+        {showGallery ? 'Hide' : 'Show'}
       </button>
       {showGallery && (
         <Slider {...settings}>
