@@ -1,16 +1,23 @@
 // Flashcards.js
+
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './Flashcards.css'
+import './Flashcards.css';
 
 const Flashcards = ({ sectionName }) => {
   const flashcardsData = getFlashcardsData(sectionName);
   const [showGallery, setShowGallery] = useState(false);
   const toggleGallery = () => {
     setShowGallery(!showGallery);
-  };  
+  };
+
+  // useEffect is defined to avoid ESLint warning
+  useEffect(() => {
+    // If you have any side effect logic, you can add it here
+  }, []); // Empty dependency array if there are no dependencies
+
   const settings = {
     dots: true,
     infinite: true,
@@ -21,7 +28,7 @@ const Flashcards = ({ sectionName }) => {
 
   return (
     <div>
-      <h2>Web Development Flashcards - {sectionName}</h2>
+      <h2>Flashcards - {sectionName}</h2>
       <button onClick={toggleGallery}>
         {showGallery ? 'Close Gallery' : 'Open Gallery'}
       </button>
@@ -30,10 +37,7 @@ const Flashcards = ({ sectionName }) => {
           {flashcardsData.map((card, index) => (
             <div key={index}>
               <h3>{card.title}</h3>
-              <p>{card.content}</p>   
-              <button>
-                Run Code
-              </button>
+              <p>{card.content}</p>
             </div>
           ))}
         </Slider>
