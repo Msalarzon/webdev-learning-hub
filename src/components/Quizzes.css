@@ -43,10 +43,22 @@
     cursor: pointer;
     font-size: 16px;
   }
-  
+
   .quiz-buttons button:hover {
     background-color: #217dbb;
   }
+
+  /* Left and Right slider buttons */
+.slick-prev:before,
+.slick-next:before {
+  color: #348047;  
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: red; 
+}
+
 
 /* Style for the submit button */
 button[type="submit"] {
