@@ -1,0 +1,67 @@
+/* Quizzes.css */
+
+
+/* Style for the radio buttons */
+  label {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  /* Additional styling for the quiz container */
+  h2 {
+    color: #3498db;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .quiz-slide ul {
+    list-style: none; 
+  }
+  
+
+  /* Style for the quiz buttons */
+  .quiz-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .quiz-buttons button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .quiz-buttons button:hover {
+    background-color: #217dbb;
+  }
+
+/* Style for the submit button */
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 40px;
+    width: 50%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #217dbb;
+  }
+  
