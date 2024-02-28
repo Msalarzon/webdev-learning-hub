@@ -1,33 +1,32 @@
 /* Quizzes.css */
 
 
-/* Style for the radio buttons */
-  label {
-    display: block;
-    margin: 5px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .selected {
+/* Answer labels styles */
+label {
+  display: block;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5%;
+  margin-right: 10%;
+  margin-left: -5%;
+}
+
+.quiz-slide ul {
+  list-style: none;
+  padding: 10; 
+}
+
+.selected {
     background-color: #3498db;
     color: white;
   }
-  
-  /* Additional styling for the quiz container */
-  h2 {
-    color: #3498db;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  .quiz-slide ul {
-    list-style: none; 
-  }
+
   
 
-  /* Style for the quiz buttons */
+  /* Quiz buttons styles*/
   .quiz-buttons {
     margin-top: 10px;
     display: flex;
@@ -48,14 +47,21 @@
     background-color: #217dbb;
   }
 
-  /* Left and Right slider buttons */
-.slick-prev:before,
-.slick-next:before {
-  color: #348047;  
+/* Left and Right slider buttons */
+.quizzes-container .slick-prev,
+.quizzes-container .slick-next {
+ margin-top: 10px;
+ margin-left: 18px;
+ margin-right: 18px;
 }
 
-.slick-prev:hover:before,
-.slick-next:hover:before {
+.quizzes-container .slick-prev:before,
+.quizzes-container .slick-next:before {
+  color: #348047; 
+}
+
+.quizzes-container .slick-prev:hover:before,
+.quizzes-container .slick-next:hover:before {
   color: red; 
 }
 
@@ -74,6 +80,7 @@ button[type="submit"] {
   }
   
   button[type="submit"]:hover {
-    background-color: #217dbb;
+    background-color: #9b59b6;
   }
+  
   

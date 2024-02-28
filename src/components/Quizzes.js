@@ -12,7 +12,7 @@ const Quizzes = ({ sectionName }) => {
   const sliderRef = useRef(null); // Ref for Slider component
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 1,
@@ -45,7 +45,7 @@ const Quizzes = ({ sectionName }) => {
 
   return (
     <div className="quizzes-container">
-      <h2>{sectionName} Quizzes</h2>
+      <h2>Quizzes</h2>
       <form onSubmit={handleQuizSubmit}>
         <Slider {...settings} ref={sliderRef}>
           {quizzesData.map((quiz, index) => (

@@ -1,11 +1,17 @@
 /* App.css */
 
+/* General Styling */
+
+.section h2 {
+}
+
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
   color: #333;
-}
+  }
+
 
 .container {
   text-align: center;
@@ -16,6 +22,8 @@ body {
   background-color: #3498db;
   padding: 20px;
   color: white;
+  background-size: cover;
+  background-position: center;
 }
 
 .logo {
@@ -39,9 +47,9 @@ body {
 }
 
 .main-content {
+  margin-top: 1%;
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
   flex-wrap: wrap;
 }
 
